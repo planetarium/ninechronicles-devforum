@@ -1,5 +1,5 @@
 ---
-title: templateㅉ
+title: template
 ---
 
 This is template documentation.
