@@ -1,6 +1,5 @@
 ---
-title: template
-draft: Y
+title: templateㅉ
 ---
 
 This is template documentation.
