@@ -6,11 +6,11 @@ title: [LAUNCHER] The Structure and Location of config.json
 
 # File Definition
 
-Currently, there are 3 seperate "config.json"s, and each file has the same structure, but its role is slightly different. This document defines these config.json as follows:
-- **remote config:** config.json file that downloaded over HTTP from Nine Chronicles S3. 
-- **local config:** config.json file that user-installed on launcher and using.
+Currently, there are 3 separate "config.json"s. although each file has the same structure, their roles are slightly different. This document defines these config.json as follows:
+- **remote config:** The config.json file on Nine Chronicles S3 storage which is accessible via HTTPS. 
+- **local config:** The config.json file that the user installs and uses.
     - `%LOCALAPPDATA%\Programs\Nine Chronicles\resources\app`
-- **user config:** config.json file that are set by each user through the launcher's settings screen and  regardless of the launcher's version.
+ - **user config:** The config.json file that is set by each user through the launcher's settings which are shared across multiple versions of the launcher.
     - `%APPDATA%\Nine Chronicles\config.json`
     - (on different network (ex. internal, previewnet)) `%APPDATA%\Nine Chronicles\config.{Network}.json`
     - (on macOS) `~/Library/Application Support/Nine Chronicles/config.json`
@@ -18,20 +18,19 @@ Currently, there are 3 seperate "config.json"s, and each file has the same struc
 
 ## Installation and Application of remote config
 
-Currently, remote config is served on [`https://download.nine-chronicles.com/9c-launcher-config.json`](https://download.nine-chronicles.com/9c-launcher-config.json), and can be distributed to each user over HTTP.
+Currently, remote config is served on https://download.nine-chronicles.com/9c-launcher-config.json and can be distributed to each user over HTTPS.
 
-If **All** following conditions are met, the user's local config will be overwritten wit the remote settings.
+If **all** of the following conditions are met, the user's local config will be overwritten to the remote settings.
 
-- APV of the remote and local config matches
+- If the APV of the remote and local configuration matches
 - ConfigVersion of remote config is higher than local config
 
-Therefore, you can assume that the latest version of the user distribution has remote config applied, except for the case like an internal test.
+Therefore, you can assume that the latest version of the user distribution has remote config applied when running on the mainnet.
 ## Overwrite of user config
 
-User config share the same structure as other config.json, but deal with values that users can set themselves (mainly language or blockchain data folder path). If such a setting exists in a user config, the launcher overrides the value of the key in the user config over any config.json when reading the config.json (even if the value of the item is an array or an object, it overwrites the array or object entirely without merging)
+User configuration uses the same schema as the others but usually stores the values that are specific to the user, such as language preference, the location of the blockchain data etc. When the corresponding key exists in the user config, the launcher reads the value of the user config without merging it with other values from other configs.
 
-
-from v100087, due to these implementation characteristics, [We distinguish which user config file to used with the "Network" key in the name of user config](https://github.com/planetarium/9c-launcher/pull/1060) To prevent the blockchain data from being mixed with different networks. When the network value is set to main network, which is '9c-main', config.json is read as it is, but if it is set to '9c-previewnet', `config.9c-previewnet.json` is read to avoid this conflict.
+However, this feature sometimes causes the blockchain data from other networks to get mixed up. So from v100087 and onwards uses a different user config when connecting to other networks by looking at the `Network` value of the local config. If the value is set to `9c-main`, it reads the config.json, but if it is set to something else like `9c-previewnet`, the launcher will read `config.9c-previewnet.json` to avoid this conflict.
 
 # Field Configuration.
 
