@@ -23,7 +23,7 @@ Currently, remote config is served on https://download.nine-chronicles.com/9c-la
 If **all** of the following conditions are met, the user's local config will be overwritten to the remote settings.
 
 - If the APV of the remote and local configuration matches
-- ConfigVersion of remote config is higher than local config
+- If the `ConfigVersion` of the remote config is higher than the local config
 
 Therefore, you can assume that the latest version of the user distribution has remote config applied when running on the mainnet.
 ## Overwrite of user config
@@ -32,7 +32,7 @@ User configuration uses the same schema as the others but usually stores the val
 
 However, this feature sometimes causes the blockchain data from other networks to get mixed up. So from v100087 and onwards uses a different user config when connecting to other networks by looking at the `Network` value of the local config. If the value is set to `9c-main`, it reads the config.json, but if it is set to something else like `9c-previewnet`, the launcher will read `config.9c-previewnet.json` to avoid this conflict.
 
-# Field Configuration.
+# Field schema
 
 [9c-launcher/config.ts at fbb99228b61d6ca4140f42a6a597e34e208d9f08 · planetarium/9c-launcher](https://github.com/planetarium/9c-launcher/blob/fbb99228b61d6ca4140f42a6a597e34e208d9f08/src/config.ts#L11)
 
