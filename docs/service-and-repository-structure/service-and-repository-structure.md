@@ -21,8 +21,7 @@ In this chapter, We'll see each part in brief.
 `Launcher` is the one you execute to play game. This checks NineChronicles game version and updates `Launcher`
 and [`Unity Client`](#2.3.-Unity-Client) to the latest version.  
 After login in `Launcher`, the `Launcher` runs Unity client to play game with your logged-in account.  
-`Launcher` also has embedded [`Headless Server`](#2.2.-Headless-Server) to attach to remote RPC node and use GraphQL
-query to get data from server.
+`Launcher` also has embedded [`Headless Server`](#2.2.-Headless-Server) to read and sign blockchain-related data from the NineChronicles network.
 
 ## 2.2. Headless Server
 
@@ -62,6 +61,7 @@ The repository for [`Launcher`](#2.1.-Launcher). You can build and run your own 
 `9c-launcher` is mostly written in TypeScript and you can easily build and run launcher following [Getting Started](https://github.com/planetarium/9c-launcher/wiki/Getting-Started).  
 If you build and run your launcher with default setting, the launcher will attach to NineChronicles mainnet(the production server).  
 Otherwise you can attach to different(maybe your own) blockchain network, you can achieve that through editing `config.json` to change target network.
+You can get the `config.json` for mainnet [here](https://download.nine-chronicles.com/9c-launcher-config.json) and the detailed document at [here](../the-structure-and-location-of-config-json.md).
 
 ## 3.2. NineChronicles.Headless
 
@@ -79,16 +79,16 @@ to create your own genesis block for your own network.
 There are several functions can be run using this repository.
 
 - Peer: save & spread available node addresses.
-- RPC server: Receives action data from client and make transaction to spread to peers.
-- GraphQL server: Returns data from blockchain to answer incoming GQL query.
-- Miner: The actual block miner. Collects transactions from peer nodes and verify tx.s to mine new block.
+- RPC server: Receives transactions from client and broadcast them to peers.
+- GraphQL server: Provides blockchain data and the node's status to answer incoming GQL query. You may send action data through this server.
+- Miner: The actual block miner. Collects transactions from peer nodes and verify tx.s to mine a new block.
 
 You can run one or more functionalities at the same time in one node.
 See [README](https://github.com/planetarium/NineChronicles.Headless/blob/main/README.md) for all available options.
 
 #### 3.2.1.2. Usage of MagicOnion
 To make gRPC connection between Unity client and .NET server, we chose [MagicOnion](https://cysharp.github.io/MagicOnion/) as an implementation.  
-This is well-made server to meet our requirements, and distributed under [MIT license](https://opensource.org/licenses/MIT).  
+This is well-made RPC framework to meet our requirements, and distributed under [MIT license](https://opensource.org/licenses/MIT).  
 Although we're not using MagicOnion's feature very well inside logic, but this information we're using MagicOnion is useful for first-time viewer.
 
 ## 3.3. NineChronicles
@@ -116,7 +116,7 @@ To attach your client to mainnet or other network, you have to change client con
 #### [GitHub repository](https://github.com/planetarium/lib9c)
 
 This is common library used broadly among NineChronicles game server and client.  
-This is [`Libplanet`](#3.5.-Libplanet) implementation to run NineChronicles game on libplanet blockchain network.  
+This has core game logic, data models of NineChronicles game developed with [Libplanet](#3.5.-Libplanet).
 In this library, you can see NineChronicles' status & action definitions and all game logics.  
 If you want to mod game action and/or logic, this repository is the one.
 
@@ -133,5 +133,5 @@ If you want to see the network structure, consensus algorithm and so on, you sho
 
 #### 3.5.1.1. Difference between Libplanet and Lib9c
 
-- `Liblpanet` is the blockchain protocol and interface to run game on blockchain network.
-- `Lib9c` is the NineChronicles version implementation of `Libplanet`.
+- Libplanet is a .NET library for creating multiplayer online game on decentralized blockchain network.
+- Lib9c is a library that contains key implementations of NineChronicles, a decentralized RPG developed with Libplanet.
