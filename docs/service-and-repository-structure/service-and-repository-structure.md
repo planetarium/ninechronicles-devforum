@@ -4,10 +4,8 @@ title: Service and repository structure
 
 # 1. Summary
 
-Nine Chronicles(a.k.a. 9c) is role-playing game on blockchain. To achieve the game on blockchain, 9c runs with multiple
-libraries in certain structure.  
-In this document, you will understand how 9c is structured and interact each other. After that, you would know what
-repository you should touch for your mod/utils.
+Nine Chronicles(a.k.a. 9c) is role-playing game on blockchain. To achieve the game on blockchain, 9c runs with multiple libraries in certain structure.  
+In this document, you will understand how 9c is structured and interact each other. After that, you would know what repository you should touch for your mod/utils.
 
 # 2. Service Structure
 
@@ -18,32 +16,25 @@ In this chapter, We'll see each part in brief.
 
 ## 2.1. Launcher
 
-Launcher is the one you execute to play game. This checks Nine Chronicles game version and updates Launcher
-and [Unity Client](#2.3.-Unity-Client) to the latest version.  
+Launcher is the one you execute to play game. This checks Nine Chronicles game version and updates Launcher and [Unity Client](#2.3.-Unity-Client) to the latest version.  
 After login in Launcher, the Launcher runs Unity client to play game with your logged-in account.  
 Launcher also has embedded [Headless Server](#2.2.-Headless-Server) to read and sign blockchain-related data from the Nine Chronicles network.
 
 ## 2.2. Headless Server
 
-Headless Server is the lightweight server that transfer Tx. data between [Unity Client](#2.3.-Unity-Client) and
-remote RPC node.  
-When the [Unity Client](#2.3.-Unity-Client) does the action, the action data is sent to the Headless Server through
-RPC connection.  
-The Headless Server wraps the client action to blockchain Transaction(Tx) and propagate to remote RPC server to be
-mined inside new block.  
-Headless Server also runs GraphQL server at the same time, so the [Launcher](#2.1.-Launcher) can query and get the
-newest data.
+Headless Server is the lightweight server that transfer Tx. data between [Unity Client](#2.3.-Unity-Client) and remote RPC node.  
+When the [Unity Client](#2.3.-Unity-Client) does the action, the action data is sent to the Headless Server through RPC connection.  
+The Headless Server wraps the client action to blockchain Transaction(Tx) and propagate to remote RPC server to be mined inside new block.  
+Headless Server also runs GraphQL server at the same time, so the [Launcher](#2.1.-Launcher) can query and get the newest data.
 
 ### 2.2.1. Remark
 
-Headless Server is embedded inside [Launcher](#2.1.-Launcher) at this moment for development convenience and
-historical issue, and it will be moved out from the [Launcher](#2.1.-Launcher).
+Headless Server is embedded inside [Launcher](#2.1.-Launcher) at this moment for development convenience and historical issue, and it will be moved out from the [Launcher](#2.1.-Launcher).
 
 ## 2.3. Unity Client
 
 Unity Client is what you play actual Nine Chronicles game. All user interactions occurs in this player.  
-Unity Client is connected to [Headless Server](#2.2.-Headless-Server) using RPC protocol to send/receive data from
-blockchain and render new states to the screen.
+Unity Client is connected to [Headless Server](#2.2.-Headless-Server) using RPC protocol to send/receive data from blockchain and render new states to the screen.
 
 # 3. Repository and Library Structure
 
@@ -68,11 +59,8 @@ You can get the `config.json` for mainnet [here](https://download.nine-chronicle
 #### [GitHub repository](https://github.com/planetarium/Nine Chronicles.Headless)
 
 The repository for [Headless Server](#2.2.-Headless-Server). You can run your own blockchain node whether it is full node or not.  
-Nine Chronicles.Headless is mostly written in C#. You can build and run your local headless server
-following [Getting Started](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Getting-Started).
-You can create and run your own blockchain network/node with this repository. Please
-check [Create new genesis block](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Create-new-genesis-block)
-to create your own genesis block for your own network.
+Nine Chronicles.Headless is mostly written in C#. You can build and run your local headless server following [Getting Started](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Getting-Started).
+You can create and run your own blockchain network/node with this repository. Please check [Create new genesis block](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Create-new-genesis-block) to create your own genesis block for your own network.
 
 ### 3.2.1. Remark
 
