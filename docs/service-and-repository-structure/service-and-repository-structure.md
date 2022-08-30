@@ -4,24 +4,24 @@ title: Service and repository structure
 
 # 1. Summary
 
-NineChronicles(a.k.a. 9c) is role-playing game on blockchain. To achieve the game on blockchain, 9c runs with multiple
+Nine Chronicles(a.k.a. 9c) is role-playing game on blockchain. To achieve the game on blockchain, 9c runs with multiple
 libraries in certain structure.  
 In this document, you will understand how 9c is structured and interact each other. After that, you would know what
 repository you should touch for your mod/utils.
 
 # 2. Service Structure
 
-![NineChronicles Service Structure](images/0001_service_structure.png)
+![Nine Chronicles Service Structure](images/0001_service_structure.png)
 
-NineChronicles has 3 parts in major. `Launcher`, `Headless Server`, `Unity Client` are those.  
+Nine Chronicles has 3 parts in major. `Launcher`, `Headless Server`, `Unity Client` are those.  
 In this chapter, We'll see each part in brief.
 
 ## 2.1. Launcher
 
-`Launcher` is the one you execute to play game. This checks NineChronicles game version and updates `Launcher`
+`Launcher` is the one you execute to play game. This checks Nine Chronicles game version and updates `Launcher`
 and [`Unity Client`](#2.3.-Unity-Client) to the latest version.  
 After login in `Launcher`, the `Launcher` runs Unity client to play game with your logged-in account.  
-`Launcher` also has embedded [`Headless Server`](#2.2.-Headless-Server) to read and sign blockchain-related data from the NineChronicles network.
+`Launcher` also has embedded [`Headless Server`](#2.2.-Headless-Server) to read and sign blockchain-related data from the Nine Chronicles network.
 
 ## 2.2. Headless Server
 
@@ -41,37 +41,37 @@ historical issue, and it will be moved out from the [`Launcher`](#2.1.-Launcher)
 
 ## 2.3. Unity Client
 
-`Unity Client` is what you play actual NineChronicles game. All user interactions occurs in this player.  
+`Unity Client` is what you play actual Nine Chronicles game. All user interactions occurs in this player.  
 `Unity Client` is connected to [`Headless Server`](#2.2.-Headless-Server) using RPC protocol to send/receive data from
 blockchain and render new states to the screen.
 
 # 3. Repository and Library Structure
 
-![NineChronicles Repository Structure](images/0002_repository_structure.png)
+![Nine Chronicles Repository Structure](images/0002_repository_structure.png)
 
-Each part of NineChronicles has common libraries to communicate each other.  
-In this chapter, We'll check the core libraries to run NineChronicles.  
-After read this chapter, you would know where to see and touch to modify NineChronicles as you wish.
+Each part of Nine Chronicles has common libraries to communicate each other.  
+In this chapter, We'll check the core libraries to run Nine Chronicles.  
+After read this chapter, you would know where to see and touch to modify Nine Chronicles as you wish.
 
 ## 3.1. 9c-launcher
 
 #### [GitHub repository](https://github.com/planetarium/9c-launcher)
 
-The repository for [`Launcher`](#2.1.-Launcher). You can build and run your own NineChronicles launcher using this repository.  
+The repository for [`Launcher`](#2.1.-Launcher). You can build and run your own Nine Chronicles launcher using this repository.  
 `9c-launcher` is mostly written in TypeScript and you can easily build and run launcher following [Getting Started](https://github.com/planetarium/9c-launcher/wiki/Getting-Started).  
-If you build and run your launcher with default setting, the launcher will attach to NineChronicles mainnet(the production server).  
+If you build and run your launcher with default setting, the launcher will attach to Nine Chronicles mainnet(the production server).  
 Otherwise you can attach to different(maybe your own) blockchain network, you can achieve that through editing `config.json` to change target network.
 You can get the `config.json` for mainnet [here](https://download.nine-chronicles.com/9c-launcher-config.json) and the detailed document at [here](../the-structure-and-location-of-config-json.md).
 
-## 3.2. NineChronicles.Headless
+## 3.2. Nine Chronicles.Headless
 
-#### [GitHub repository](https://github.com/planetarium/NineChronicles.Headless)
+#### [GitHub repository](https://github.com/planetarium/Nine Chronicles.Headless)
 
 The repository for [`Headless Server`](#2.2.-Headless-Server). You can run your own blockchain node whether it is full node or not.  
-`NineChronicles.Headless` is mostly written in C#. You can build and run your local headless server
-following [Getting Started](https://github.com/planetarium/NineChronicles.Headless/wiki/Getting-Started).
+`Nine Chronicles.Headless` is mostly written in C#. You can build and run your local headless server
+following [Getting Started](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Getting-Started).
 You can create and run your own blockchain network/node with this repository. Please
-check [Create new genesis block](https://github.com/planetarium/NineChronicles.Headless/wiki/Create-new-genesis-block)
+check [Create new genesis block](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Create-new-genesis-block)
 to create your own genesis block for your own network.
 
 ### 3.2.1. Remark
@@ -86,7 +86,7 @@ There are several functions can be run using this repository.
 - Miner: The actual block miner. Collects transactions from peer nodes and verify tx.s to mine a new block.
 
 You can run one or more functionalities at the same time in one node.
-See [README](https://github.com/planetarium/NineChronicles.Headless/blob/main/README.md) for all available options.
+See [README](https://github.com/planetarium/Nine Chronicles.Headless/blob/main/README.md) for all available options.
 
 #### 3.2.1.2. Usage of MagicOnion
 
@@ -94,12 +94,12 @@ To make gRPC connection between Unity client and .NET server, we chose [MagicOni
 This is well-made RPC framework to meet our requirements, and distributed under [MIT license](https://opensource.org/licenses/MIT).  
 Although we're not using MagicOnion's feature very well inside logic, but this information we're using MagicOnion is useful for first-time viewer.
 
-## 3.3. NineChronicles
+## 3.3. Nine Chronicles
 
-#### [GitHub repository](https://github.com/planetarium/NineChronicles)
+#### [GitHub repository](https://github.com/planetarium/Nine Chronicles)
 
-The unity client to play NineChronicles Game. You need `Unity` to build and run this game on your local computer.  
-Following [Getting Started](https://github.com/planetarium/NineChronicles/wiki/Get-Started), you can build and run your own NineChronicles client on your environment.  
+The unity client to play Nine Chronicles Game. You need `Unity` to build and run this game on your local computer.  
+Following [Getting Started](https://github.com/planetarium/Nine Chronicles/wiki/Get-Started), you can build and run your own Nine Chronicles client on your environment.  
 If you want to enhance UX/UI or any user interactive properties, this is the right repository to dig.
 
 ### 3.3.1. Remark
@@ -118,9 +118,9 @@ To attach your client to mainnet or other network, you have to change client con
 
 #### [GitHub repository](https://github.com/planetarium/lib9c)
 
-This is common library used broadly among NineChronicles game server and client.  
-This has core game logic, data models of NineChronicles game developed with [Libplanet](#3.5.-Libplanet).
-In this library, you can see NineChronicles' status & action definitions and all game logics.  
+This is common library used broadly among Nine Chronicles game server and client.  
+This has core game logic, data models of Nine Chronicles game developed with [Libplanet](#3.5.-Libplanet).
+In this library, you can see Nine Chronicles' status & action definitions and all game logics.  
 If you want to mod game action and/or logic, this repository is the one.
 
 ## 3.5. Libplanet
@@ -137,4 +137,4 @@ If you want to see the network structure, consensus algorithm and so on, you sho
 #### 3.5.1.1. Difference between Libplanet and Lib9c
 
 - Libplanet is a .NET library for creating multiplayer online game on decentralized blockchain network.
-- Lib9c is a library that contains key implementations of NineChronicles, a decentralized RPG developed with Libplanet.
+- Lib9c is a library that contains key implementations of Nine Chronicles, a decentralized RPG developed with Libplanet.
