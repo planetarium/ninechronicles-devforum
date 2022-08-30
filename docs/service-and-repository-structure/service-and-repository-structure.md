@@ -75,7 +75,9 @@ check [Create new genesis block](https://github.com/planetarium/NineChronicles.H
 to create your own genesis block for your own network.
 
 ### 3.2.1. Remark
+
 #### 3.2.1.1. Options for headless node
+
 There are several functions can be run using this repository.
 
 - Peer: save & spread available node addresses.
@@ -87,6 +89,7 @@ You can run one or more functionalities at the same time in one node.
 See [README](https://github.com/planetarium/NineChronicles.Headless/blob/main/README.md) for all available options.
 
 #### 3.2.1.2. Usage of MagicOnion
+
 To make gRPC connection between Unity client and .NET server, we chose [MagicOnion](https://cysharp.github.io/MagicOnion/) as an implementation.  
 This is well-made RPC framework to meet our requirements, and distributed under [MIT license](https://opensource.org/licenses/MIT).  
 Although we're not using MagicOnion's feature very well inside logic, but this information we're using MagicOnion is useful for first-time viewer.
