@@ -77,6 +77,7 @@ $ git submodule update --recursive
 - `File > Clone` 메뉴를 클릭합니다.
 
   <img
+    alt="Fork: `File > Clone` menu"
     src="./images/fork-menu-file-clone.png"
     style="width:50vw" />
 
@@ -85,6 +86,7 @@ $ git submodule update --recursive
   - Location: 아래의 이미지에서 저는 "`/Users/seungmin/Repositories/NineChronicles`"로 지정했습니다.
 
   <img
+    alt="Fork: `Clone` popup"
     src="./images/fork-clone-popup.png"
     style="width:50vw" />
 
@@ -93,12 +95,14 @@ $ git submodule update --recursive
 - `Remotes > Origin > main` 브랜치를 우클릭하고 `Checkout 'origin/main'...` 메뉴를 클릭합니다.
 
   <img
+    alt="Fork: `Remotes > Origin > main` -> `Checkout 'origin/main'...` menu"
     src="./images/fork-checkout-main.png"
     style="width:50vw" />
 
 - 이어서 뜨는 팝업에서는 `Track` 버튼을 클릭합니다.
 
   <img
+    alt="Fork: `Track` popup"
     src="./images/fork-track-popup.png"
     style="width:50vw" />
 
@@ -115,12 +119,14 @@ $ git submodule update --recursive
 - 최초 실행시 `Open` 버튼을 클릭합니다.
 
   <img
+    alt="Unity Hub: `Projects > Open` button"
     src="./images/unity-hub-projects-open.png"
     style="width:50vw" />
 
 - 복제한 9C 저장소에서 `nekoyume` 폴더를 선택하고 `Open` 버튼을 클릭합니다.
 
   <img
+    alt="Unity Hub: `Open Project` popup"
     src="./images/unity-hub-projects-open-popup.png"
     style="width:50vw" />
 
@@ -189,6 +195,7 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
 - `/nekoyume/Asseta/_Scenes/` 경로의 Game 씬을 더블클릭합니다.
 
   <img
+    alt="Unity Editor: `Game` scene"
     src="./images/unity-editor-game-scene.png"
     style="width:50vw" />
 
@@ -197,6 +204,7 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
 - 유니티 에디터 상중단의 ▶️ 버튼을 클릭합니다.
 
   <img
+    alt="Unity Editor: `Play` button"
     src="./images/unity-editor-play-button.png"
     style="width:50vw" />
 
@@ -207,6 +215,7 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
 - 그리고 `GAME START` 버튼을 클릭합니다.
 
   <img
+    alt="Unity Editor Play: input passphrase"
     src="./images/unity-editor-input-passphrase.png"
     style="width:50vw" />
 
