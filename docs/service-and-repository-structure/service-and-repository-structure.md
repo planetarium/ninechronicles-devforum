@@ -13,36 +13,36 @@ repository you should touch for your mod/utils.
 
 ![Nine Chronicles Service Structure](images/0001_service_structure.png)
 
-Nine Chronicles has 3 parts in major. `Launcher`, `Headless Server`, `Unity Client` are those.  
+Nine Chronicles has 3 parts in major. "Launcher", "Headless Server", "Unity Client" are those.  
 In this chapter, We'll see each part in brief.
 
 ## 2.1. Launcher
 
-`Launcher` is the one you execute to play game. This checks Nine Chronicles game version and updates `Launcher`
-and [`Unity Client`](#2.3.-Unity-Client) to the latest version.  
-After login in `Launcher`, the `Launcher` runs Unity client to play game with your logged-in account.  
-`Launcher` also has embedded [`Headless Server`](#2.2.-Headless-Server) to read and sign blockchain-related data from the Nine Chronicles network.
+Launcher is the one you execute to play game. This checks Nine Chronicles game version and updates Launcher
+and [Unity Client](#2.3.-Unity-Client) to the latest version.  
+After login in Launcher, the Launcher runs Unity client to play game with your logged-in account.  
+Launcher also has embedded [Headless Server](#2.2.-Headless-Server) to read and sign blockchain-related data from the Nine Chronicles network.
 
 ## 2.2. Headless Server
 
-`Headless Server` is the lightweight server that transfer Tx. data between [`Unity Client`](#2.3.-Unity-Client) and
+Headless Server is the lightweight server that transfer Tx. data between [Unity Client](#2.3.-Unity-Client) and
 remote RPC node.  
-When the [`Unity Client`](#2.3.-Unity-Client) does the action, the action data is sent to the `Headless Server` through
+When the [Unity Client](#2.3.-Unity-Client) does the action, the action data is sent to the Headless Server through
 RPC connection.  
-The `Headless Server` wraps the client action to blockchain Transaction(Tx) and propagate to remote RPC server to be
+The Headless Server wraps the client action to blockchain Transaction(Tx) and propagate to remote RPC server to be
 mined inside new block.  
-`Headless Server` also runs GraphQL server at the same time, so the [`Launcher`](#2.1.-Launcher) can query and get the
+Headless Server also runs GraphQL server at the same time, so the [Launcher](#2.1.-Launcher) can query and get the
 newest data.
 
 ### 2.2.1. Remark
 
-`Headless Server` is embedded inside [`Launcher`](#2.1.-Launcher) at this moment for development convenience and
-historical issue, and it will be moved out from the [`Launcher`](#2.1.-Launcher).
+Headless Server is embedded inside [Launcher](#2.1.-Launcher) at this moment for development convenience and
+historical issue, and it will be moved out from the [Launcher](#2.1.-Launcher).
 
 ## 2.3. Unity Client
 
-`Unity Client` is what you play actual Nine Chronicles game. All user interactions occurs in this player.  
-`Unity Client` is connected to [`Headless Server`](#2.2.-Headless-Server) using RPC protocol to send/receive data from
+Unity Client is what you play actual Nine Chronicles game. All user interactions occurs in this player.  
+Unity Client is connected to [Headless Server](#2.2.-Headless-Server) using RPC protocol to send/receive data from
 blockchain and render new states to the screen.
 
 # 3. Repository and Library Structure
@@ -57,8 +57,8 @@ After read this chapter, you would know where to see and touch to modify Nine Ch
 
 #### [GitHub repository](https://github.com/planetarium/9c-launcher)
 
-The repository for [`Launcher`](#2.1.-Launcher). You can build and run your own Nine Chronicles launcher using this repository.  
-`9c-launcher` is mostly written in TypeScript and you can easily build and run launcher following [Getting Started](https://github.com/planetarium/9c-launcher/wiki/Getting-Started).  
+The repository for [Launcher](#2.1.-Launcher). You can build and run your own Nine Chronicles launcher using this repository.  
+9c-launcher is mostly written in TypeScript and you can easily build and run launcher following [Getting Started](https://github.com/planetarium/9c-launcher/wiki/Getting-Started).  
 If you build and run your launcher with default setting, the launcher will attach to Nine Chronicles mainnet(the production server).  
 Otherwise you can attach to different(maybe your own) blockchain network, you can achieve that through editing `config.json` to change target network.
 You can get the `config.json` for mainnet [here](https://download.nine-chronicles.com/9c-launcher-config.json) and the detailed document at [here](../the-structure-and-location-of-config-json.md).
@@ -67,8 +67,8 @@ You can get the `config.json` for mainnet [here](https://download.nine-chronicle
 
 #### [GitHub repository](https://github.com/planetarium/Nine Chronicles.Headless)
 
-The repository for [`Headless Server`](#2.2.-Headless-Server). You can run your own blockchain node whether it is full node or not.  
-`Nine Chronicles.Headless` is mostly written in C#. You can build and run your local headless server
+The repository for [Headless Server](#2.2.-Headless-Server). You can run your own blockchain node whether it is full node or not.  
+Nine Chronicles.Headless is mostly written in C#. You can build and run your local headless server
 following [Getting Started](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Getting-Started).
 You can create and run your own blockchain network/node with this repository. Please
 check [Create new genesis block](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Create-new-genesis-block)
@@ -98,7 +98,7 @@ Although we're not using MagicOnion's feature very well inside logic, but this i
 
 #### [GitHub repository](https://github.com/planetarium/Nine Chronicles)
 
-The unity client to play Nine Chronicles Game. You need `Unity` to build and run this game on your local computer.  
+The unity client to play Nine Chronicles Game. You need Unity to build and run this game on your local computer.  
 Following [Getting Started](https://github.com/planetarium/Nine Chronicles/wiki/Get-Started), you can build and run your own Nine Chronicles client on your environment.  
 If you want to enhance UX/UI or any user interactive properties, this is the right repository to dig.
 
@@ -111,7 +111,7 @@ If you use later version instead noted version, you can meet a bunch of errors, 
 
 #### 3.3.1.2. Select blockchain to attach
 
-If you run your game using `Play` button on your Unity editor, It will run with its own internal blockchain network, not any existing external blockchain.  
+If you run your game using "Play" button on your Unity editor, It will run with its own internal blockchain network, not any existing external blockchain.  
 To attach your client to mainnet or other network, you have to change client configurations.
 
 ## 3.4. Lib9c
