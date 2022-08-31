@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2000"
+   height="2000"
+   viewBox="0 0 2000 2000"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Launcher-Unity-Headless(no repo).svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="Launcher-Unity-Headless(no-repo).png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="0.20925"
+     inkscape:cx="382.3178"
+     inkscape:cy="829.15173"
+     inkscape:window-width="1600"
+     inkscape:window-height="831"
+     inkscape:window-x="142"
+     inkscape:window-y="1112"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="1039.4265,399.04421"
+       orientation="0,-1"
+       id="guide2222"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1000.2562,611.13077"
+       orientation="1,0"
+       id="guide2283"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <rect
+       x="999.55617"
+       y="1491.164"
+       width="353.22999"
+       height="179.65165"
+       id="rect459" />
+    <rect
+       x="232.64261"
+       y="1235.5292"
+       width="63.65102"
+       height="261.76466"
+       id="rect1805" />
+    <marker
+       style="overflow:visible"
+       id="TriangleStart"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="2.3239999"
+       markerHeight="2.6867051"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+    <rect
+       x="716.3618"
+       y="1396.5897"
+       width="210.66125"
+       height="103.03115"
+       id="rect8846" />
+    <rect
+       x="734.57604"
+       y="1137.0007"
+       width="685.77814"
+       height="157.47253"
+       id="rect6529" />
+    <rect
+       x="234.95813"
+       y="397.20593"
+       width="313.60587"
+       height="94.4095"
+       id="rect292" />
+    <rect
+       x="278.19318"
+       y="291.11484"
+       width="362.73584"
+       height="124.61678"
+       id="rect236" />
+    <marker
+       style="overflow:visible"
+       id="TriangleStart-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="2.3239999"
+       markerHeight="2.6867051"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135-5" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#648fff;fill-opacity:1;stroke:#000000;stroke-width:31.6766;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect906"
+       width="1164.3324"
+       height="811.62054"
+       x="459.21457"
+       y="968.54572"
+       ry="113.62685" />
+    <rect
+       style="fill:#dc267f;fill-opacity:1;stroke:#000000;stroke-width:30.7262;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect906-8"
+       width="832.3761"
+       height="402.78543"
+       x="602.60144"
+       y="1281.8684"
+       ry="56.389961" />
+    <rect
+       style="fill:#fe6100;fill-opacity:1;stroke:#000000;stroke-width:30.7262;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect906-8-8"
+       width="832.3761"
+       height="402.78543"
+       x="602.60144"
+       y="219.35852"
+       ry="56.389961" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline';fill:#648fff;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="1018.9829"
+       y="1072.9764"
+       id="text6585"><tspan
+         sodipodi:role="line"
+         id="tspan6583"
+         x="1018.9829"
+         y="1072.9764"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';text-align:center;text-anchor:middle;fill:#000000" /><tspan
+         sodipodi:role="line"
+         x="1018.9829"
+         y="1162.9764"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';text-align:center;text-anchor:middle;fill:#000000"
+         id="tspan9857">Launcher</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text8844"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';white-space:pre;shape-inside:url(#rect8846);display:inline;fill:#dc267f;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';fill:#dc267f;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="694.47308"
+       y="1509.892"
+       id="text8852"><tspan
+         sodipodi:role="line"
+         x="694.47308"
+         y="1509.892"
+         style="font-size:72px;fill:#000000;fill-opacity:1"
+         id="tspan8933">Headless Server</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';fill:#dc267f;fill-opacity:1;stroke:none;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="1018.8071"
+       y="350.06958"
+       id="text8852-9"><tspan
+         sodipodi:role="line"
+         x="1018.8071"
+         y="350.06958"
+         style="font-size:72px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
+         id="tspan8904-1" /><tspan
+         sodipodi:role="line"
+         x="1018.8071"
+         y="440.06958"
+         style="font-size:72px;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
+         id="tspan8933-3">Unity Client</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:20;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart);marker-end:url(#TriangleStart)"
+       d="M 552.21259,1496.3212 H 343.57974 v -344.9945 h 71.41076"
+       id="path524"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:20;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart-7);marker-end:url(#TriangleStart-7)"
+       d="m 1482.6493,1494.5576 h 255.0046 V 435.84441 h -260.9051"
+       id="path524-3"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       id="text1803"
+       style="font-size:18px;font-family:Pretendard;-inkscape-font-specification:Pretendard;white-space:pre;shape-inside:url(#rect1805);display:inline;fill:none;stroke:#000000;stroke-width:20;stroke-dasharray:none;stroke-opacity:1"
+       transform="translate(18.78948,-17.7137)"><tspan
+         x="232.64258"
+         y="1252.141"
+         id="tspan586"><tspan
+           style="stroke:none"
+           id="tspan584">G</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:72px;font-family:Pretendard;-inkscape-font-specification:Pretendard;fill:#000000;fill-opacity:1;stroke:none;stroke-width:20;stroke-dasharray:none;stroke-opacity:1"
+       x="-1480.0111"
+       y="311.18622"
+       id="text1817"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan1815"
+         x="-1480.0111"
+         y="311.18622"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold'">GraphQL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:72px;font-family:Pretendard;-inkscape-font-specification:Pretendard;fill:#000000;fill-opacity:1;stroke:none;stroke-width:20;stroke-dasharray:none;stroke-opacity:1"
+       x="-884.44305"
+       y="1703.048"
+       id="text1817-5"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan1815-6"
+         x="-884.44305"
+         y="1703.048"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold'">gRPC</tspan></text>
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:20;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#TriangleStart-7)"
+       d="M 775.63554,668.56812 V 952.79487"
+       id="path2285"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:20;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="822.08295"
+       y="836.78119"
+       id="text2467"><tspan
+         sodipodi:role="line"
+         id="tspan2465"
+         x="822.08295"
+         y="836.78119">Run Client</tspan></text>
+    <text
+       xml:space="preserve"
+       id="text457"
+       style="font-weight:bold;font-size:72px;font-family:'Roboto Mono for Powerline';-inkscape-font-specification:'Roboto Mono for Powerline Bold';white-space:pre;shape-inside:url(#rect459);display:inline;fill:#000000;stroke-width:20;stroke-linejoin:round" />
+  </g>
+</svg>
