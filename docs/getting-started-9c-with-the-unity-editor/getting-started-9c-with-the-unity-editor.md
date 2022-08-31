@@ -14,13 +14,14 @@ Here's how to install Unity with Unity Hub.
 
 ## Install Unity Hub
 
-### 1. Click [Unity Hub download link][unity-hub-download-link].
+### 1. Click the Unity Hub download link for your operating system.
 
+- [Windows(.exe)](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe)
+- [Mac(.dmg)](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg)
 - If the above link does not work, download Unity Hub from [Unity download page][unity-download-page].
 
 ### 2. Run the downloaded Unity Hub installation file.
 
-[unity-hub-download-link]: https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg
 [unity-download-page]: https://unity3d.com/get-unity/download
 
 ## Install Unity(2021.3.5f1)
@@ -74,9 +75,8 @@ $ git submodule update --recursive
 
 ### 1. Install the Fork for your operating system.
 
-- [Windows(installer)](https://git-fork.com/update/win/ForkInstaller.exe)
-- [Mac(2.20.2)](https://cdn.fork.dev/mac/Fork-2.20.2.dmg)
-- 위 링크가 동작하지 않거나 다른 버전을 설치하고 싶다면 [Fork 페이지][fork-page]로 접속해서 다운로드 합니다.
+- [Windows(.exe)](https://git-fork.com/update/win/ForkInstaller.exe)
+- [Mac(2.20.2)(.dmg)](https://cdn.fork.dev/mac/Fork-2.20.2.dmg)
 - If above link does not work or if you want to install another version, go to the [Fork page][fork-page] and download it.
 
 ### 2. Run the Fork and clone the Nine Chronicles repository.
@@ -139,7 +139,6 @@ Unity account creation and licensing are not covered here. You can also proceed 
 
 ## Configure `clo.json`
 
-clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 설정하는 파일입니다.
 The clo.json file is a file that sets various options related to the blockchain network.
 
 ### 1. Create a clo.json file in `/nekoyume/Assets/StreamingAssets/` based on the cloned path.
@@ -220,6 +219,8 @@ You are now ready to access the Nine Chronicles mainnet and play.
 
 ### 3. Sign in.
 
+- Go to [3.1.](#31-sign-up) if there is no Protected Private Key in the Key Store path.
+- If there is no Protected Private Key in the Key Store path, go to [3.1.](#31-sign-up).
 - If you enter "PrivateKey" in the clo.json file, this process is skipped.
 - Confirm the address of the selected account in the login pop-up and enter `passphrase`.
 - And click the `GAME START` button.
@@ -227,6 +228,24 @@ You are now ready to access the Nine Chronicles mainnet and play.
   <img
     alt="Unity Editor Play: input passphrase"
     src="./images/unity-editor-input-passphrase.png"
+    style="width:50vw" />
+
+#### 3.1. Sign up.
+
+You can generate the Private Key and the Protected Private Key in this step.
+
+- Click the `GAME START` button
+
+  <img
+    alt="Unity Editor Play: click GAME START button"
+    src="./images/unity-editor-generate-private-key-popup.png"
+    style="width:50vw" />
+
+- Fill the passphrase and click the `GAME START` button.
+
+  <img
+    alt="Unity Editor Play: input passphrase and click GAME START button"
+    src="./images/unity-editor-generate-private-key-popup2.png"
     style="width:50vw" />
 
 # Conclusion
