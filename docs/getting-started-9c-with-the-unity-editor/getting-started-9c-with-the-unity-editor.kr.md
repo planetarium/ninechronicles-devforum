@@ -1,18 +1,18 @@
 ---
-title: Getting started Nine Chronicles with the Unity editor
+title: 유니티 에디터로 나인 크로니클 시작하기
 ---
 
-[Planetarium][planetarium-page]에서 배포하는 [Nine Chronicles][9c-page] (이하 9C)는 [유니티][unity-page]를 사용해서 만들었습니다. 이는 9C를 유니티 에디터로 실행할 수 있다는 말이고, 이 문서에서는 그 방법을 소개합니다.
+[플라네타리움][planetarium-page]에서 배포하는 [나인 크로니클][9c-page]는 [유니티][unity-page]를 사용해서 만들었습니다. 이는 나인 크로니클을 유니티 에디터로 실행할 수 있다는 말이고, 이 문서에서는 그 방법을 소개합니다.
 
 [planetarium-page]: https://planetariumhq.com/
 [9c-page]: https://nine-chronicles.com/
 [unity-page]: https://unity.com/
 
-# Install Unity
+# 유니티 설치하기
 
 여기서는 `유니티 허브`를 사용한 유니티 설치 방법을 소개합니다.
 
-## Install Unity Hub
+## 유니티 허브 설치하기
 
 ### 1. [유니티 허브 다운로드 링크][unity-hub-download-link]를 클릭합니다.
 
@@ -23,25 +23,30 @@ title: Getting started Nine Chronicles with the Unity editor
 [unity-hub-download-link]: https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.dmg
 [unity-download-page]: https://unity3d.com/get-unity/download
 
-## Install Unity(2021.3.5f1)
+## 유니티(2021.3.5f1) 설치하기
 
 ### 1. [유니티 허브용 유니티(2021.3.5f1) 설치 링크][unity-install-with-hub-2021.3.5f1]를 클릭합니다.
 
-- 위 링크가 동작하지 않으면 [유니티 다운로드 아카이브 페이지][unity-download-archive-page]에서 유니티(2021.3.5f1)를 다운로드 합니다. 이때 유니티 허브 버튼으로 설치하기를 권장합니다.
+- 위 링크가 동작하지 않으면 [유니티 다운로드 아카이브 페이지][unity-download-archive-page]에서 유니티(2021.3.5f1)를 다운로드 합니다. 이때 녹색 유니티 허브 버튼으로 설치합니다.
+
+  <img
+    alt="Web: green Unity Hub button"
+    src="./images/web-green-unity-hub-button.png"
+    style="width:50vw" />
 
 ### 2. 유니티 허브가 실행되면서 유니티(2021.3.5f1) 설치가 진행됩니다.
 
 [unity-install-with-hub-2021.3.5f1]: unityhub://2021.3.5f1/40eb3a945986
 [unity-download-archive-page]: https://unity3d.com/get-unity/download/archive
 
-# Clone the 9C repository
+# 나인 크로니클 저장소 복제하기
 
 여기서는 저장소를 복제하는 방법으로 [Git CLI][git-page]를 사용하는 방법과 [Fork][fork-page]를 사용하는 방법을 다룹니다.
 
 [git-page]: https://git-scm.com/
 [fork-page]: https://git-fork.com/
 
-## Clone with Git CLI
+## Git CLI로 복제하기
 
 ### 1. 운영체제에 맞는 Git CLI를 설치합니다.
 
@@ -49,10 +54,11 @@ title: Getting started Nine Chronicles with the Unity editor
 - [Mac](https://git-scm.com/download/mac)
 - [Linux](https://git-scm.com/download/linux)
 
-### 2. 9C를 복제합니다.
+### 2. 나인 크로니클 저장소를 복제합니다.
 
 ```
 $ git clone https://github.com/planetarium/NineChronicles.git
+$ cd NineChronicles
 $ git submodule update --init --recursive
 $ git config core.hooksPath hooks
 ```
@@ -64,7 +70,7 @@ $ git checkout main
 $ git submodule update --recursive
 ```
 
-## Clone with Fork
+## Fork로 복제하기
 
 ### 1. 운영체제에 맞는 Fork를 설치합니다.
 
@@ -72,7 +78,7 @@ $ git submodule update --recursive
 - [Mac(2.20.2)](https://cdn.fork.dev/mac/Fork-2.20.2.dmg)
 - 위 링크가 동작하지 않거나 다른 버전을 설치하고 싶다면 [Fork 페이지][fork-page]로 접속해서 다운로드 합니다.
 
-### 2. Fork를 실행해서 저장소를 Clone 합니다.
+### 2. Fork를 실행해서 나인 크로니클 저장소를 복제합니다.
 
 - `File > Clone` 메뉴를 클릭합니다.
 
@@ -106,31 +112,31 @@ $ git submodule update --recursive
     src="./images/fork-track-popup.png"
     style="width:50vw" />
 
-# Play 9C with the Unity editor
+# 유니티 에디터로 나인 크로니클 플레이하기
 
-## Open 9C project with the Unity Hub
+## 유니티 허브로 나인 크로니클 프로젝트 열기
 
 ### 1. Unity Hub를 실행합니다.
 
-여기서는 Unity 계정 생성과 라이센스에 대해서는 설명하지 않습니다. 무료(Personal 라이센스)로도 진행할 수 있습니다.
+여기서는 Unity 계정 생성과 라이센스에 대해서는 설명하지 않습니다. 무료(유니티 Personal 라이센스)로도 진행할 수 있습니다.
 
-### 2. 9C 프로젝트를 엽니다.
+### 2. 나인 크로니클 프로젝트를 엽니다.
 
-- 최초 실행시 `Open` 버튼을 클릭합니다.
+- 최초 실행시 `Projects > Open` 버튼을 클릭합니다.
 
   <img
     alt="Unity Hub: `Projects > Open` button"
     src="./images/unity-hub-projects-open.png"
     style="width:50vw" />
 
-- 복제한 9C 저장소에서 `nekoyume` 폴더를 선택하고 `Open` 버튼을 클릭합니다.
+- 나인 크로니클 저장소를 복제한 위치에서 `/nekoyume` 폴더를 선택하고 `Open` 버튼을 클릭합니다.
 
   <img
     alt="Unity Hub: `Open Project` popup"
     src="./images/unity-hub-projects-open-popup.png"
     style="width:50vw" />
 
-## Configure `clo.json`
+## `clo.json` 설정하기
 
 clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 설정하는 파일입니다.
 
@@ -149,23 +155,23 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
 }
 ```
 
-## `Prepare key` in the `Key Store` directory
+## `Key Store` 경로에 키 준비하기
 
-9C를 플레이하기 위해서는 블록체인 네트워크에 참여하기 위해 Private Key가 필요합니다.
-이미 9C를 플레이한 적이 있다면, 이미 Private Key와 Protected Private Key를 갖고 있다는 말입니다.
+나인 크로니클을 플레이하기 위해서는 블록체인 네트워크에 참여하기 위해 Private Key가 필요합니다.
+이미 나인 크로니클을 플레이한 적이 있다면, 이미 Private Key와 Protected Private Key를 갖고 있다는 말입니다.
 
 - Private Key: 트렌젝션에 서명할 때 필요한 키입니다.
 - Protected Private Key: Private Key를 암호화한 파일입니다.
 
 ### 1. Private Key 생성하기
 
-- 이 단계를 건너띄고 `Play` 단계로 넘어가서 Private Key를 생성하는 단계를 이용합니다.
+- 이 단계를 건너띄고 [플레이](#플레이) 단계로 넘어가서 Private Key를 생성하는 단계를 이용합니다.
 
 ### 2. 갖고 있는 Protected Private Key를 Key Store 경로에 넣기
 
 - Key Store 경로
   - Protected Private Key를 보관하는 경로입니다.
-  - 이 경로의 기본값은 Libplanet 0.41.0 버전을 기준으로 [이렇게][default-path-of-key-store] 결정됩니다.
+  - 이 경로의 기본값은 [Libplanet 0.41.0 버전][libplanet-0.41.0]을 기준으로 [이렇게][default-path-of-key-store] 결정됩니다.
   - Windows
     - `%appdata%\planetarium\keystore\`
   - Mac
@@ -176,6 +182,7 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
     - `home/.config/planetarium/keystore/`
 
 [default-path-of-key-store]: https://github.com/planetarium/libplanet/blob/0.41.0/Libplanet/KeyStore/Web3KeyStore.cs#L21-L29
+[libplanet-0.41.0]: https://github.com/planetarium/libplanet/tree/0.41.0
 
 ### 3. (not recommended) clo.json 파일에 직접 Private Key를 설정하기
 
@@ -187,10 +194,11 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
   }
   ```
 
-## Play
+## 플레이
 
-이제 9C 메인넷에 접속해서 플레이할 준비를 모두 마쳤습니다.
-### 1. `Game` 씬을 띄웁니다.
+이제 나인 크로니클 메인넷에 접속해서 플레이할 준비를 모두 마쳤습니다.
+
+### 1. `Game` 씬을 엽니다.
 
 - `/nekoyume/Asseta/_Scenes/` 경로의 Game 씬을 더블클릭합니다.
 
@@ -219,9 +227,9 @@ clo.json 파일은 블록체인 네트워크와 관련한 다양한 옵션을 �
     src="./images/unity-editor-input-passphrase.png"
     style="width:50vw" />
 
-# Conclusion
+# 마치며
 
-여기까지 유니티 에디터를 이용해서 9C main 네트워크에 접속하는 방법을 소개했습니다.
-이 방법을 유지하기 위해서는 9C 저장소의 main 브랜치를 꾸준히 당겨와야 합니다.
+여기까지 유니티 에디터를 이용해서 나인 크로니클 main 네트워크에 접속하는 방법을 소개했습니다.
+이 방법을 유지하기 위해서는 나인 크로니클 저장소의 main 브랜치를 꾸준히 당겨와야 합니다.
 
 앞으로 이 내용을 기반으로 다양한 팁들을 소개할 예정입니다.
