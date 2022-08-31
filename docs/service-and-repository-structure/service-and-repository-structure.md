@@ -56,11 +56,11 @@ You can get the `config.json` for mainnet [here](https://download.nine-chronicle
 
 ## 3.2. Nine Chronicles.Headless
 
-#### [GitHub repository](https://github.com/planetarium/Nine Chronicles.Headless)
+#### [GitHub repository](https://github.com/planetarium/NineChronicles.Headless)
 
 The repository for [Headless Server](#2.2.-Headless-Server). You can run your own blockchain node whether it is full node or not.  
-Nine Chronicles.Headless is mostly written in C#. You can build and run your local headless server following [Getting Started](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Getting-Started).
-You can create and run your own blockchain network/node with this repository. Please check [Create new genesis block](https://github.com/planetarium/Nine Chronicles.Headless/wiki/Create-new-genesis-block) to create your own genesis block for your own network.
+Nine Chronicles.Headless is mostly written in C#. You can build and run your local headless server following [Getting Started](https://github.com/planetarium/NineChronicles.Headless/wiki/Getting-Started).
+You can create and run your own blockchain network/node with this repository. Please check [Create new genesis block](https://github.com/planetarium/NineChronicles.Headless/wiki/Create-new-genesis-block) to create your own genesis block for your own network.
 
 ### 3.2.1. Remark
 
@@ -74,7 +74,7 @@ There are several functions can be run using this repository.
 - Miner: The actual block miner. Collects transactions from peer nodes and verify tx.s to mine a new block.
 
 You can run one or more functionalities at the same time in one node.
-See [README](https://github.com/planetarium/Nine Chronicles.Headless/blob/main/README.md) for all available options.
+See [README](https://github.com/planetarium/NineChronicles.Headless/blob/main/README.md) for all available options.
 
 #### 3.2.1.2. Usage of MagicOnion
 
@@ -84,10 +84,10 @@ Although we're not using MagicOnion's feature very well inside logic, but this i
 
 ## 3.3. Nine Chronicles
 
-#### [GitHub repository](https://github.com/planetarium/Nine Chronicles)
+#### [GitHub repository](https://github.com/planetarium/NineChronicles)
 
 The unity client to play Nine Chronicles Game. You need Unity to build and run this game on your local computer.  
-Following [Getting Started](https://github.com/planetarium/Nine Chronicles/wiki/Get-Started), you can build and run your own Nine Chronicles client on your environment.  
+Following [Getting Started](https://github.com/planetarium/NineChronicles/wiki/Get-Started), you can build and run your own Nine Chronicles client on your environment.  
 If you want to enhance UX/UI or any user interactive properties, this is the right repository to dig.
 
 ### 3.3.1. Remark
